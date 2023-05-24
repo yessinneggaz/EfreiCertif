@@ -1,16 +1,15 @@
-// Gérer le clic sur le bouton "Choisir"
-var choisirButtons = document.getElementsByClassName('choisir');
-for (var i = 0; i < choisirButtons.length; i++) {
-  choisirButtons[i].addEventListener('click', function() {
-    var certification = this.parentNode.innerText.split(' - ')[0];
-    ajouterCertification(certification);
-  });
-}
+// Gérer les liens "Créer un compte" et "Se connecter"
+var createAccountLink = document.getElementById('create-account-link');
+var loginLink = document.getElementById('login-link');
+var loginSection = document.getElementById('login');
+var createAccountSection = document.getElementById('create-account');
 
-// Fonction pour ajouter une certification à la liste des certifications de l'utilisateur
-function ajouterCertification(certification) {
-  var compteListe = document.getElementById('compte').getElementsByTagName('ul')[0];
-  var li = document.createElement('li');
-  li.innerText = certification + ' - Choisi';
-  compteListe.appendChild(li);
-}
+createAccountLink.addEventListener('click', function(event) {
+  event.preventDefault();
+  loginSection.style.display = 'none';
+  createAccountSection.style.display = 'block';
+});
+
+loginLink.addEventListener('click', function(event) {
+  event.preventDefault();
+  login
