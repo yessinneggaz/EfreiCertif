@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Site de certifications</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Site de certifications</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Catalogue</a></li>
+        <li><a href="#">Mon Compte</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section id="login">
+    <h2>Connexion</h2>
+    <form action="#" method="post">
+      <input type="text" name="username" placeholder="Nom d'utilisateur" required>
+      <input type="password" name="password" placeholder="Mot de passe" required>
+      <button type="submit">Se connecter</button>
+    </form>
+    <p>Pas encore de compte ? <a href="#">S'inscrire</a></p>
+  </section>
+  
+  <section id="catalogue">
+    <h2>Catalogue de certifications</h2>
+    <ul>
+      <!-- Afficher les certifications depuis la base de données -->
+      <li>Certification A <button class="choisir">Choisir</button></li>
+      <li>Certification B <button class="choisir">Choisir</button></li>
+      <li>Certification C <button class="choisir">Choisir</button></li>
+    </ul>
+  </section>
+  
+  <section id="compte">
+    <h2>Mon Compte</h2>
+    <ul>
+      <!-- Afficher les certifications choisies par l'utilisateur -->
+      <li>Certification A - Choisi</li>
+      <li>Certification B - En cours</li>
+    </ul>
+  </section>
+  
+  <footer>
+    <p>&copy; 2023 Site de certifications</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
